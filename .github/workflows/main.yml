@@ -135,7 +135,7 @@ jobs:
         if: always()
         with:
           name: mpv-x64-v3
-          path: /__w/mpv-winbuild-cmake/mpv-winbuild-cmake/release64-v3/*.7z
+          path: release$BIT/*.7z
 
       - name: Cleaning build directory
         if: always()
