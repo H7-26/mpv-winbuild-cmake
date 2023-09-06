@@ -135,7 +135,7 @@ jobs:
         if: always()
         with:
           name: mpv-x64-v3
-          path: release$BIT/*.7z
+          path: release64-v3/*.7z
 
       - name: Cleaning build directory
         if: always()
