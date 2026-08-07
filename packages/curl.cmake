@@ -14,8 +14,6 @@ ExternalProject_Add(curl
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !tests !docs"
-    GIT_REMOTE_NAME origin
-    GIT_RESET 81cdf4d8e5be60bf3fe498c823c34a42f2b08294
     PATCH_COMMAND ""
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ${EXEC} ${CMAKE_COMMAND} -H<SOURCE_DIR> -B<BINARY_DIR>
