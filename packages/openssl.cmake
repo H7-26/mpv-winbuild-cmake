@@ -8,7 +8,7 @@ ExternalProject_Add(openssl
     GIT_CLONE_FLAGS "--sparse --filter=tree:0"
     GIT_CLONE_POST_COMMAND "sparse-checkout set --no-cone /* !test"
     GIT_REMOTE_NAME origin
-    GIT_RESET 5be1a2a1432947ca0a381848d71f5e852d85929d
+    GIT_RESET aae016bfd52fcad2bc9657c2c782cfdf73b1ed5f
     GIT_SUBMODULES ""
     UPDATE_COMMAND ""
     PATCH_COMMAND ${EXEC} git am --3way ${CMAKE_CURRENT_SOURCE_DIR}/openssl-*.patch
